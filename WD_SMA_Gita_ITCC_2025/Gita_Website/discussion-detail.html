@@ -1,35 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stack Overflow Question</title>
-    <link rel="stylesheet" href="css/discussion-detail.css">
-</head>
-<body>
-    <div class="container">
-        <div class="main-content">
+    <link rel="stylesheet" href="css/discussion-detail.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <h1 class="forum-title">KommQns</h1>
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="#" class="btn btn-login">Log In</a>
+          <a href="#" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="forum-main container">
+      <div class="forum-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search discussions..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <a href="#" class="btn btn-new-post">New Discussion</a>
+      </div>
+
+      <div class="discussion-main-area">
+        <div class="discussion-categories">
+          <h2>Categories</h2>
+          <ul>
+            <li><a href="#" class="active">All Topics</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">lorem ipsum</a></li>
+            <li><a href="#"> </a></li>
+            <li><a href="#"> </a></li>
+            <li><a href="#"> </a></li>
+          </ul>
+        </div>
+
+        <div class="discussion-detail">
+          <div class="main-content">
             <div class="question">
-                <h1>How to automatically convert objective expression from pyomo model to use as fitness_func for pygad?</h1>
-                <div class="question-meta">
-                    <span class="meta-item">Asked today</span>
-                    <span class="meta-item">Modified today</span>
-                    <span class="meta-item">Viewed 11 times</span>
-                </div>
-                
-                <div class="question-body">
-                    <p>1<br>
-                    Use pyomo to formulate optimization problems and typically use solvers like for example IPOPT.<br>
-                    Now I would like to apply metaheuristic solvers to those optimization problems. I have already heard of frameworks like pymos or pygad that could be used for such purposes.</p>
-                    
-                    <p>2<br>
-                    However, one always has to formulate the objective and constraints by hand. I would like to find an automated way to fetch the objective or constraints formulations from the pyomo ConcreteModel instance and use it to formulate the fitness_func for pygad.</p>
-                    
-                    <p>3<br>
-                    For my MWE I just create a simple model with a simple objective (and try to pass this objective as a fitness_func to pygad GA), no constraints yet.</p>
-                    
-                    <div class="code-block">
-                        <pre>Minimum (not as desired) Working Example:
+              <h1>
+                How to automatically convert objective expression from pyomo
+                model to use as fitness_func for pygad?
+              </h1>
+              <div class="question-meta">
+                <span class="meta-item">Asked today</span>
+                <span class="meta-item">Modified today</span>
+                <span class="meta-item">Viewed 11 times</span>
+              </div>
+
+              <div class="question-body">
+                <p>
+                  1<br />
+                  Use pyomo to formulate optimization problems and typically use
+                  solvers like for example IPOPT.<br />
+                  Now I would like to apply metaheuristic solvers to those
+                  optimization problems. I have already heard of frameworks like
+                  pymos or pygad that could be used for such purposes.
+                </p>
+
+                <p>
+                  2<br />
+                  However, one always has to formulate the objective and
+                  constraints by hand. I would like to find an automated way to
+                  fetch the objective or constraints formulations from the pyomo
+                  ConcreteModel instance and use it to formulate the
+                  fitness_func for pygad.
+                </p>
+
+                <p>
+                  3<br />
+                  For my MWE I just create a simple model with a simple
+                  objective (and try to pass this objective as a fitness_func to
+                  pygad GA), no constraints yet.
+                </p>
+
+                <div class="code-block">
+                  <pre>
+Minimum (not as desired) Working Example:
 
 from pyomo import envdrom as pc  
 import pygad  
@@ -43,40 +109,56 @@ model_param1 = pc.Baran(
     initialize=[1]  
     ], if (i++)==2 for i in model.set1  
     ),  
-    initialize=True</pre>
-                    </div>
+    initialize=True</pre
+                  >
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div class="sidebar">
+            <div class="sidebar-section">
+              <h3>The Overflow Blog</h3>
+              <ul>
+                <li>Saving the world with speed and at scale</li>
+                <li>
+                  That custom gift for your mom takes more work than you think
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-section">
+              <h3>Featured on Meta</h3>
+              <ul>
+                <li>Will you help build our new visual identity?</li>
+                <li>
+                  Upcoming Initiatives on Stack Overflow and across the Stack
+                  Exchange network...
+                </li>
+                <li>Policy Generative AI (e.g., ChatGPT) is banned</li>
+                <li>
+                  Stack Overflow Experiment: Safely expanding voting access
+                </li>
+                <li>
+                  Developments in our experiment to add a live activity panel to
+                  the site
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-section">
+              <h3>Hot Network Questions</h3>
+              <ul>
+                <li>
+                  How can my drawers keep humans from reverse engineering their
+                  technology?
+                </li>
+                <li>Efficient extraction of first/only key in a dictionary</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
-        <div class="sidebar">
-            <div class="sidebar-section">
-                <h3>The Overflow Blog</h3>
-                <ul>
-                    <li>Saving the world with speed and at scale</li>
-                    <li>That custom gift for your mom takes more work than you think</li>
-                </ul>
-            </div>
-            
-            <div class="sidebar-section">
-                <h3>Featured on Meta</h3>
-                <ul>
-                    <li>Will you help build our new visual identity?</li>
-                    <li>Upcoming Initiatives on Stack Overflow and across the Stack Exchange network...</li>
-                    <li>Policy Generative AI (e.g., ChatGPT) is banned</li>
-                    <li>Stack Overflow Experiment: Safely expanding voting access</li>
-                    <li>Developments in our experiment to add a live activity panel to the site</li>
-                </ul>
-            </div>
-            
-            <div class="sidebar-section">
-                <h3>Hot Network Questions</h3>
-                <ul>
-                    <li>How can my drawers keep humans from reverse engineering their technology?</li>
-                    <li>Efficient extraction of first/only key in a dictionary</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
