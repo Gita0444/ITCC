@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <a href="index.html" class="forum-title">KommQns</a>
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="popular.html">Popular</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="login.html" class="btn btn-login">Log In</a>
+          <a href="sign-up.html" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="forum-main container">
+      <div class="discussion-main-area">
+        <!-- Sidebar -->
+        <div class="discussion-categories">
+          <h2>Categories</h2>
+          <ul>
+            <li><a href="#" class="active">All Topics</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile content -->
+        <div class="profile-main">
+          <div class="profile-header">
+            <img src="https://i.pravatar.cc/150?img=12" alt="User Avatar" class="profile-avatar" />
+            <div class="profile-info">
+              <h1 class="profile-name">Amanda Smith</h1>
+              <p class="profile-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, USA</p>
+              <p class="profile-username">@amanda21</p>
+              <p class="profile-role">Lead Security Analyst at SecureTech</p>
+              <button class="btn btn-edit">Edit Profile</button>
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <h2>Skills</h2>
+            <div class="skill-tags">
+              <span>Penetration Testing</span>
+              <span>Risk Assessment</span>
+              <span>Network Security</span>
+              <span>SIEM Tools</span>
+              <span>Threat Hunting</span>
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <h2>Employment History</h2>
+            <div class="job-entry">
+              <h3>Security Analyst</h3>
+              <p>CyberSafe Inc · Full-time</p>
+              <p>Jan 2022 – Present · 3 years</p>
+              <p>Monitoring, investigating, and responding to security threats in real-time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

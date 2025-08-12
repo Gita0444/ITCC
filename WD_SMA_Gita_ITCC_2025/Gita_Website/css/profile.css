@@ -1,0 +1,83 @@
+.profile-main {
+  flex: 1;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-location,
+.profile-username,
+.profile-role {
+  margin: 4px 0;
+  color: #555;
+}
+
+.btn-edit {
+  margin-top: 10px;
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.profile-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background-color: #e9ecef;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.job-entry h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.job-entry p {
+  margin: 4px 0;
+  color: #555;
+}
