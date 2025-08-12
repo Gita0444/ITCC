@@ -1,0 +1,67 @@
+.discussion-form {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.discussion-form h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.discussion-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.discussion-form label {
+  font-weight: bold;
+}
+
+.discussion-form input,
+.discussion-form select,
+.discussion-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.discussion-form input:focus,
+.discussion-form select:focus,
+.discussion-form textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.btn-submit {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.btn-submit:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .discussion-main-area {
+    flex-direction: column;
+  }
+
+  .discussion-categories {
+    margin-bottom: 20px;
+  }
+}

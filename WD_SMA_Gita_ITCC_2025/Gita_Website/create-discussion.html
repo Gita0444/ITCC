@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Discussion - KommQns</title>
+    <link rel="stylesheet" href="css/add-discussion.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <a href="index.html" class="forum-title">KommQns</a>
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="popular.html">Popular</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="login.html" class="btn btn-login">Log In</a>
+          <a href="sign-up.html" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="forum-main container">
+      <div class="forum-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search discussions..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <a href="add-discussion.html" class="btn btn-new-post active"
+          >New Discussion</a
+        >
+      </div>
+
+      <div class="discussion-main-area">
+        <!-- Sidebar -->
+        <div class="discussion-categories">
+          <h2>Categories</h2>
+          <ul>
+            <li><a href="#" class="active">All Topics</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+          </ul>
+        </div>
+
+        <!-- Form Section -->
+        <div class="discussion-form">
+          <h1>Create New Discussion</h1>
+          <form action="#" method="POST">
+            <label for="title">Discussion Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Enter your discussion title..."
+              required
+            />
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">-- Select Category --</option>
+              <option value="technology">Technology</option>
+              <option value="lorem">Lorem Ipsum</option>
+            </select>
+
+            <label for="content">Content</label>
+            <textarea
+              id="content"
+              name="content"
+              rows="8"
+              placeholder="Describe your problem or question in detail..."
+              required
+            ></textarea>
+
+            <label for="tags">Tags (comma separated)</label>
+            <input
+              type="text"
+              id="tags"
+              name="tags"
+              placeholder="e.g. python, optimization, pygad"
+            />
+
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Post Discussion
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

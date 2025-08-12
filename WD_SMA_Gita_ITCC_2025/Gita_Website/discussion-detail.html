@@ -37,7 +37,9 @@
           <input type="text" placeholder="Search discussions..." />
           <button><i class="fas fa-search"></i></button>
         </div>
-        <a href="#" class="btn btn-new-post">New Discussion</a>
+        <a href="/create-discussion.html" class="btn btn-new-post"
+          >New Discussion</a
+        >
       </div>
 
       <div class="discussion-main-area">
@@ -111,6 +113,104 @@ model_param1 = pc.Baran(
     initialize=True</pre
                   >
                 </div>
+              </div>
+
+              <!-- Answers Section -->
+              <div class="answers-section">
+                <h2>Answers <span>(3)</span></h2>
+
+                <!-- Answer Item -->
+                <div class="answer-item">
+                  <div class="answer-header">
+                    <div class="user-avatar">A</div>
+                    <div class="user-info">
+                      <span class="user-name">Alice Johnson</span>
+                      <span class="answer-date">Answered 2 hours ago</span>
+                    </div>
+                  </div>
+                  <div class="answer-body">
+                    <p>
+                      You can extract the objective function directly from the
+                      Pyomo model's `model.obj.expr` attribute and wrap it into
+                      a callable to pass into pygad's `fitness_func`. This way
+                      you won't have to rewrite the equation manually.
+                    </p>
+                  </div>
+                  <div class="answer-actions">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> 12
+                    </button>
+                    <button class="btn-reply">
+                      <i class="fas fa-reply"></i> Reply
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Another Answer -->
+                <div class="answer-item">
+                  <div class="answer-header">
+                    <div class="user-avatar">B</div>
+                    <div class="user-info">
+                      <span class="user-name">Brian Lee</span>
+                      <span class="answer-date">Answered yesterday</span>
+                    </div>
+                  </div>
+                  <div class="answer-body">
+                    <p>
+                      Another way is to define the objective function as a
+                      separate Python function, so it can be reused both in
+                      Pyomo and in pygad without duplication.
+                    </p>
+                  </div>
+                  <div class="answer-actions">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> 7
+                    </button>
+                    <button class="btn-reply">
+                      <i class="fas fa-reply"></i> Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Answer Form -->
+              <div class="answer-form">
+                <h2>Your Answer</h2>
+                <form action="#" method="POST">
+                  <div class="editor-toolbar">
+                    <button type="button" title="Bold">
+                      <i class="fas fa-bold"></i>
+                    </button>
+                    <button type="button" title="Italic">
+                      <i class="fas fa-italic"></i>
+                    </button>
+                    <button type="button" title="Code">
+                      <i class="fas fa-code"></i>
+                    </button>
+                    <button type="button" title="Link">
+                      <i class="fas fa-link"></i>
+                    </button>
+                    <button type="button" title="Quote">
+                      <i class="fas fa-quote-right"></i>
+                    </button>
+                    <button type="button" title="List">
+                      <i class="fas fa-list-ul"></i>
+                    </button>
+                    <button type="button" title="Numbered List">
+                      <i class="fas fa-list-ol"></i>
+                    </button>
+                  </div>
+                  <textarea
+                    name="answer"
+                    id="answer"
+                    rows="8"
+                    placeholder="Write your answer here..."
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Post Answer
+                  </button>
+                </form>
               </div>
             </div>
           </div>
