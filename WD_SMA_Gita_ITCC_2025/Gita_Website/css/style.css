@@ -6,8 +6,8 @@
     --dark-color: #111;
     --gray-color: #888;
     --light-gray: #f0f0f0;
-    --success-color: #4bb543;
-    --error-color: #ff3333;
+    --success-color: #e0ffdd;
+    --error-color: #ffcdcd;
 }
 
 * {
@@ -28,6 +28,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 a {
@@ -114,8 +115,8 @@ a {
 
 .user-controls {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 0px;
 }
 
 /* Main Content Styles */
@@ -219,4 +220,40 @@ a {
 .discussion-thread:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.thread-votes{
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thread-votes button{
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.vote-up.active {
+    background-color: green;
+    color: white;
+}
+
+.vote-down.nonactive {
+    background-color: red;
+    color: white;
+}
+
+.thread-content p{
+ margin-top: 12px ;
+ margin-bottom: 14px;
+
+}
+
+.thread-meta span{
+  margin: 0 8px;
+}
+
+.thread-meta span:first-child{
+  margin-left: 0;
 }
