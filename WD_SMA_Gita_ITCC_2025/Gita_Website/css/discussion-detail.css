@@ -167,3 +167,75 @@
 .answer-actions button:hover {
   text-decoration: underline;
 }
+
+.answer-form {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.answer-form h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.editor-toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.editor-toolbar button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.editor-toolbar button:hover {
+  background: #f4f4f4;
+}
+
+.answer-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.answer-form textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.btn-submit {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-submit:hover {
+  background-color: #555;
+}
+
+@media (max-width: 600px) {
+  .editor-toolbar {
+    justify-content: flex-start;
+  }
+}

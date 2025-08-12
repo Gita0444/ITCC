@@ -37,7 +37,9 @@
           <input type="text" placeholder="Search discussions..." />
           <button><i class="fas fa-search"></i></button>
         </div>
-        <a href="#" class="btn btn-new-post">New Discussion</a>
+        <a href="/create-discussion.html" class="btn btn-new-post"
+          >New Discussion</a
+        >
       </div>
 
       <div class="discussion-main-area">
@@ -169,6 +171,46 @@ model_param1 = pc.Baran(
                     </button>
                   </div>
                 </div>
+              </div>
+
+              <!-- Answer Form -->
+              <div class="answer-form">
+                <h2>Your Answer</h2>
+                <form action="#" method="POST">
+                  <div class="editor-toolbar">
+                    <button type="button" title="Bold">
+                      <i class="fas fa-bold"></i>
+                    </button>
+                    <button type="button" title="Italic">
+                      <i class="fas fa-italic"></i>
+                    </button>
+                    <button type="button" title="Code">
+                      <i class="fas fa-code"></i>
+                    </button>
+                    <button type="button" title="Link">
+                      <i class="fas fa-link"></i>
+                    </button>
+                    <button type="button" title="Quote">
+                      <i class="fas fa-quote-right"></i>
+                    </button>
+                    <button type="button" title="List">
+                      <i class="fas fa-list-ul"></i>
+                    </button>
+                    <button type="button" title="Numbered List">
+                      <i class="fas fa-list-ol"></i>
+                    </button>
+                  </div>
+                  <textarea
+                    name="answer"
+                    id="answer"
+                    rows="8"
+                    placeholder="Write your answer here..."
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Post Answer
+                  </button>
+                </form>
               </div>
             </div>
           </div>
