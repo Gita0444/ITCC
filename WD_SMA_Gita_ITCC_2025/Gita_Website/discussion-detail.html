@@ -112,6 +112,64 @@ model_param1 = pc.Baran(
                   >
                 </div>
               </div>
+
+              <!-- Answers Section -->
+              <div class="answers-section">
+                <h2>Answers <span>(3)</span></h2>
+
+                <!-- Answer Item -->
+                <div class="answer-item">
+                  <div class="answer-header">
+                    <div class="user-avatar">A</div>
+                    <div class="user-info">
+                      <span class="user-name">Alice Johnson</span>
+                      <span class="answer-date">Answered 2 hours ago</span>
+                    </div>
+                  </div>
+                  <div class="answer-body">
+                    <p>
+                      You can extract the objective function directly from the
+                      Pyomo model's `model.obj.expr` attribute and wrap it into
+                      a callable to pass into pygad's `fitness_func`. This way
+                      you won't have to rewrite the equation manually.
+                    </p>
+                  </div>
+                  <div class="answer-actions">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> 12
+                    </button>
+                    <button class="btn-reply">
+                      <i class="fas fa-reply"></i> Reply
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Another Answer -->
+                <div class="answer-item">
+                  <div class="answer-header">
+                    <div class="user-avatar">B</div>
+                    <div class="user-info">
+                      <span class="user-name">Brian Lee</span>
+                      <span class="answer-date">Answered yesterday</span>
+                    </div>
+                  </div>
+                  <div class="answer-body">
+                    <p>
+                      Another way is to define the objective function as a
+                      separate Python function, so it can be reused both in
+                      Pyomo and in pygad without duplication.
+                    </p>
+                  </div>
+                  <div class="answer-actions">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> 7
+                    </button>
+                    <button class="btn-reply">
+                      <i class="fas fa-reply"></i> Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
