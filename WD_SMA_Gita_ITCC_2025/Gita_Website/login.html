@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - KommQns</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <a href="index.html" class="forum-title">KommQns</a>
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="popular.html">Popular</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="login.html" class="btn btn-login">Log In</a>
+          <a href="sign-up.html" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Section -->
+    <main class="login-page">
+      <div class="login-box">
+        <h2>Login</h2>
+        <p class="welcome">Hi, Welcome back 👋</p>
+
+        <button class="google-login">
+          <i class="fab fa-google"></i> Login with Google
+        </button>
+
+        <div class="divider"><span>or Login with Email</span></div>
+
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="e.g. johndoe@email.com" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+
+          <div class="form-options">
+            <label><input type="checkbox" /> Remember Me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn-login-submit">Login</button>
+        </form>
+
+        <p class="register-link">
+          Not registered yet?
+          <a href="sign-up.html">Create an account →</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

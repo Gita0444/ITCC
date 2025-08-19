@@ -1,0 +1,124 @@
+body {
+  background-color: #f5f7fa;
+}
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 90vh;
+}
+
+.signup-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.signup-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signup-box .welcome {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.google-signup {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.google-signup i {
+  margin-right: 8px;
+}
+
+.divider {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"] {
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.btn-signup-submit {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-signup-submit:hover {
+  background-color: #084fc1;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.login-link a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
