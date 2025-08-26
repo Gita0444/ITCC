@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KommQns</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popular.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <a href="index.html" class="forum-title">
+            <img src="assets/logo.png" alt="logo KommQns" />
+            KommQns</a
+          >
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="popular.html" class="active">Popular</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="login.html" class="btn btn-login">Log In</a>
+          <a href="sign-up.html" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="forum-main container categories-layout">
+      <!-- Kolom Kiri: Topik Populer -->
+      <section class="popular-list">
+        <!-- 1. Popular Discussion Card -->
+        <div class="popular-item">
+          <div class="popular-header">
+            <h3><a href="#">Best Practices for Ransomware Defense</a></h3>
+          </div>
+          <p class="popular-description">
+            Members share techniques and frameworks to strengthen defenses
+            against ransomware attacks.
+          </p>
+          <div class="popular-highlights">
+            <span><i class="fa fa-comment"></i> 220 replies</span>
+            <span><i class="fa fa-eye"></i> 8.5k views</span>
+            <span><i class="fa fa-thumbs-up"></i> 540 upvotes</span>
+            <span><i class="fa fa-share"></i> 120 shares</span>
+          </div>
+          <div class="popular-meta">
+            <span>Started by <b>AliceSec</b></span> ·
+            <span>Last reply: 2h ago</span>
+          </div>
+        </div>
+
+        <!-- 2. Another Popular Card -->
+        <div class="popular-item">
+          <div class="popular-header">
+            <h3><a href="#">SQL Injection in Modern Frameworks</a></h3>
+          </div>
+          <p class="popular-description">
+            Ongoing discussion about preventing SQLi in Node.js, Django, and
+            Laravel applications.
+          </p>
+          <div class="popular-highlights">
+            <span><i class="fa fa-comment"></i> 150 replies</span>
+            <span><i class="fa fa-eye"></i> 6.2k views</span>
+            <span><i class="fa fa-thumbs-up"></i> 410 upvotes</span>
+            <span><i class="fa fa-share"></i> 75 shares</span>
+          </div>
+          <div class="popular-meta">
+            <span>Started by <b>ZeroDayHunter</b></span> ·
+            <span>Last reply: 5h ago</span>
+          </div>
+        </div>
+
+        <!-- 3. Popular Card -->
+        <div class="popular-item">
+          <div class="popular-header">
+            <h3><a href="#">Advanced Malware Obfuscation Techniques</a></h3>
+          </div>
+          <p class="popular-description">
+            Discussion on modern obfuscation methods used by malware authors to
+            bypass detection and how analysts uncover them.
+          </p>
+          <div class="popular-highlights">
+            <span><i class="fa fa-comment"></i> 185 replies</span>
+            <span><i class="fa fa-eye"></i> 7.3k views</span>
+            <span><i class="fa fa-thumbs-up"></i> 360 upvotes</span>
+            <span><i class="fa fa-share"></i> 95 shares</span>
+          </div>
+          <div class="popular-meta">
+            <span>Started by <b>HexAnalyst</b></span> ·
+            <span>Last reply: 1d ago</span>
+          </div>
+        </div>
+
+        <!-- 4. Popular Card -->
+        <div class="popular-item">
+          <div class="popular-header">
+            <h3><a href="#">Building a Custom C2 Framework</a></h3>
+          </div>
+          <p class="popular-description">
+            Members share resources, tutorials, and pitfalls when developing
+            custom command & control frameworks for red teaming.
+          </p>
+          <div class="popular-highlights">
+            <span><i class="fa fa-comment"></i> 132 replies</span>
+            <span><i class="fa fa-eye"></i> 5.8k views</span>
+            <span><i class="fa fa-thumbs-up"></i> 280 upvotes</span>
+            <span><i class="fa fa-share"></i> 60 shares</span>
+          </div>
+          <div class="popular-meta">
+            <span>Started by <b>RootKitMaster</b></span> ·
+            <span>Last reply: 12h ago</span>
+          </div>
+        </div>
+
+        <!-- 5. Popular Card -->
+        <div class="popular-item">
+          <div class="popular-header">
+            <h3><a href="#">Top Resources for OSCP Preparation</a></h3>
+          </div>
+          <p class="popular-description">
+            A curated list of study guides, practice labs, and success stories
+            from members who passed the OSCP exam.
+          </p>
+          <div class="popular-highlights">
+            <span><i class="fa fa-comment"></i> 310 replies</span>
+            <span><i class="fa fa-eye"></i> 12.4k views</span>
+            <span><i class="fa fa-thumbs-up"></i> 670 upvotes</span>
+            <span><i class="fa fa-share"></i> 210 shares</span>
+          </div>
+          <div class="popular-meta">
+            <span>Started by <b>CERTifiedPro</b></span> ·
+            <span>Last reply: 3d ago</span>
+          </div>
+        </div>
+
+        <!-- Tambahkan lebih banyak card seperti di atas -->
+      </section>
+
+      <!-- Kolom Kanan: Filter Popular -->
+      <section class="popular-filter">
+        <h2>Popular By</h2>
+        <ul class="filter-tabs">
+          <li><a href="#" class="active">Today</a></li>
+          <li><a href="#">This Week</a></li>
+          <li><a href="#">This Month</a></li>
+          <li><a href="#">This Year</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
