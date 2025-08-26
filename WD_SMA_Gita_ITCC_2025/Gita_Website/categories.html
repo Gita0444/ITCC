@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KommQns</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/category.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <a href="index.html" class="forum-title">
+            <img src="assets/logo.png" alt="logo KommQns">
+            KommQns</a>
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html" class = "active">Categories</a></li>
+              <li><a href="popular.html">Popular</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="login.html" class="btn btn-login">Log In</a>
+          <a href="sign-up.html" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="forum-main container categories-layout">
+  <!-- Kategori Kolom Kiri -->
+  <section class="category-list">
+  <!-- 1. Cybersecurity Discussions -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #4caf50;"></span>
+    <h3>Cybersecurity Discussions</h3>
+  </div>
+  <p class="category-description">General talk about infosec trends, news, and ideas.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #2ecc71;">News</span>
+    <span class="tag" style="background-color: #27ae60;">Trends</span>
+  </div>
+  <div class="category-topics">1.2k topics</div>
+</div>
+
+<!-- 2. Web Exploitation -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #e91e63;"></span>
+    <h3>Web Exploitation</h3>
+  </div>
+  <p class="category-description">Techniques, tools, and questions about web app hacking.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #e67e22;">XSS</span>
+    <span class="tag" style="background-color: #d35400;">SQLi</span>
+    <span class="tag" style="background-color: #c0392b;">RCE</span>
+  </div>
+  <div class="category-topics">850 topics</div>
+</div>
+
+<!-- 3. Malware Analysis -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #9c27b0;"></span>
+    <h3>Malware Analysis</h3>
+  </div>
+  <p class="category-description">Reverse engineering, sandboxing, and analyzing malware behavior.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #8e44ad;">Reverse Engineering</span>
+    <span class="tag" style="background-color: #3498db;">Dynamic Analysis</span>
+  </div>
+  <div class="category-topics">670 topics</div>
+</div>
+
+<!-- 4. Red Teaming -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #ff9800;"></span>
+    <h3>Red Teaming</h3>
+  </div>
+  <p class="category-description">Attack simulations, adversary emulation, and tooling.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #f39c12;">C2 Frameworks</span>
+    <span class="tag" style="background-color: #d35400;">Payloads</span>
+  </div>
+  <div class="category-topics">920 topics</div>
+</div>
+
+<!-- 5. Blue Teaming -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #2196f3;"></span>
+    <h3>Blue Teaming</h3>
+  </div>
+  <p class="category-description">Detection, defense, threat hunting, and monitoring strategies.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #3498db;">SIEM</span>
+    <span class="tag" style="background-color: #2980b9;">EDR</span>
+  </div>
+  <div class="category-topics">780 topics</div>
+</div>
+
+<!-- 6. Tools & Scripts -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #607d8b;"></span>
+    <h3>Tools & Scripts</h3>
+  </div>
+  <p class="category-description">Share tools, scripts, and automation workflows.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #7f8c8d;">Python</span>
+    <span class="tag" style="background-color: #95a5a6;">Bash</span>
+    <span class="tag" style="background-color: #34495e;">PowerShell</span>
+  </div>
+  <div class="category-topics">1.1k topics</div>
+</div>
+
+<!-- 7. Career & Certification -->
+<div class="category-item">
+  <div class="category-header">
+    <span class="category-color" style="background-color: #f44336;"></span>
+    <h3>Career & Certification</h3>
+  </div>
+  <p class="category-description">Advice on building careers and preparing for certs.</p>
+  <div class="category-tags">
+    <span class="tag" style="background-color: #e74c3c;">OSCP</span>
+    <span class="tag" style="background-color: #c0392b;">CEH</span>
+    <span class="tag" style="background-color: #e67e22;">Career Advice</span>
+  </div>
+  <div class="category-topics">560 topics</div>
+</div>
+  
+
+    <!-- Tambahkan lebih banyak item seperti di atas -->
+  </section>
+
+  <!-- Topik Terbaru Kolom Kanan -->
+  <section class="latest-topics">
+    <h2>Latest Topics</h2>
+    <div class="latest-topic">
+      <h4><a href="#">Windows Lateral Movement - Skill Assessment</a></h4>
+      <div class="topic-meta">
+        <span class="meta-tag">Academy</span>
+        <span>10 replies · Apr 30</span>
+      </div>
+    </div>
+
+    <div class="latest-topic">
+      <h4><a href="#">Second-Order LFI</a></h4>
+      <div class="topic-meta">
+        <span class="meta-tag">Academy</span>
+        <span>8 replies · Apr 29</span>
+      </div>
+    </div>
+
+    <!-- Tambahkan lebih banyak topik -->
+  </section>
+</main>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

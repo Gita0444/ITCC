@@ -91,9 +91,14 @@ a {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 10px;
 }
-
+.forum-title img{
+  width: 32px;
+}
 .forum-nav ul {
   display: flex;
   list-style: none;

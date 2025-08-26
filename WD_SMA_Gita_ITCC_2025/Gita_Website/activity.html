@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="forum-header">
+      <div class="container">
+        <div class="cover-left">
+          <a href="index.html" class="forum-title">
+            <img src="assets/logo.png" alt="logo KommQns">
+            KommQns</a>
+          <nav class="forum-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="popular.html">Popular</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-controls">
+          <a href="login.html" class="btn btn-login">Log In</a>
+          <a href="sign-up.html" class="btn btn-signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="forum-main container">
+      <div class="discussion-main-area">
+        <!-- Sidebar -->
+        <div class="discussion-categories">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="profile.html">Overall</a></li>
+            <li><a href="activity.html"  class="active">Activity</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile content -->
+        <div class="cover-activity">
+            <!-- Activity Section -->
+<div class="profile-section">
+  <h2>Activity: Questions</h2>
+  <div class="activity-list">
+    <div class="activity-item">
+      <h3><a href="#">How to mitigate XSS vulnerabilities in modern apps?</a></h3>
+      <p class="activity-meta">Posted on August 10, 2025 · 4 answers · 132 views</p>
+    </div>
+    <div class="activity-item">
+      <h3><a href="#">Best practices for securing APIs in microservices?</a></h3>
+      <p class="activity-meta">Posted on July 29, 2025 · 2 answers · 89 views</p>
+    </div>
+  </div>
+</div>
+
+<div class="profile-section">
+  <h2>Activity: Answers</h2>
+  <div class="activity-list">
+    <div class="activity-item">
+      <h3><a href="#">What is the difference between IDS and IPS?</a></h3>
+      <p class="activity-meta">Answered on August 15, 2025 · 12 upvotes</p>
+      <blockquote class="answer-snippet">
+        IDS is a monitoring system while IPS actively blocks potential threats. IDS logs and alerts, IPS logs and blocks...
+      </blockquote>
+    </div>
+    <div class="activity-item">
+      <h3><a href="#">How does OAuth 2.0 improve security?</a></h3>
+      <p class="activity-meta">Answered on August 5, 2025 · 8 upvotes</p>
+      <blockquote class="answer-snippet">
+        OAuth 2.0 enables secure delegated access by issuing tokens instead of sharing credentials...
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

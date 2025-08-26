@@ -10,13 +10,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Header -->
     <header class="forum-header">
       <div class="container">
         <div class="cover-left">
-          <a href="index.html" class="forum-title">KommQns</a>
+          <a href="index.html" class="forum-title">
+            <img src="assets/logo.png" alt="logo KommQns">
+            KommQns</a>
           <nav class="forum-nav">
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -37,11 +40,10 @@
       <div class="discussion-main-area">
         <!-- Sidebar -->
         <div class="discussion-categories">
-          <h2>Categories</h2>
+          <h2>Navigation</h2>
           <ul>
-            <li><a href="#" class="active">All Topics</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Cyber Security</a></li>
+            <li><a href="profile.html" class="active">Overall</a></li>
+            <li><a href="activity.html">Activity</a></li>
           </ul>
         </div>
 
@@ -78,6 +80,23 @@
               <p>Monitoring, investigating, and responding to security threats in real-time.</p>
             </div>
           </div>
+          <!-- Portfolio Section -->
+<div class="profile-section">
+  <h2>Portfolio</h2>
+  <div class="portfolio-list">
+    <div class="portfolio-item">
+      <h3>Phishing Detection System</h3>
+      <p>Developed a machine learning-based phishing detection tool integrated with email gateways to prevent phishing attacks in real-time.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+    <div class="portfolio-item">
+      <h3>SIEM Dashboard Implementation</h3>
+      <p>Built and customized a SIEM dashboard using Splunk to monitor and visualize real-time security events across multiple endpoints.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </main>
